@@ -1,0 +1,19 @@
+# Commandos postgresql
+
+# Mudar de usuario (linux)
+# su - postgress
+
+# Entrar no postgresql
+# psql 
+
+# Listar databases
+# \l
+
+# Conectar na base
+# \c clima
+
+# Listar tabelas
+# \dt
+
+# Describe table
+# \d+ nome da tabela
