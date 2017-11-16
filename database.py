@@ -1,5 +1,5 @@
 from sqlalchemy import *
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, relationship
 from sqlalchemy.ext.declarative import declarative_base
 
 from config import DATABASE_URI
@@ -32,6 +32,9 @@ class Measurements_daily(Base):
 	wind_direction = Column(Integer(), ForeignKey('wind_directions.id'), nullable=False)
 	wind_speed  = Column(Float())
 	cloudiness  = Column(Float())
+
+	Weather_Station = relationship("Weather_station", lazy='joined')
+	Wind = relationship("Wind_direction", lazy='joined')
 
 class Wind_direction(Base):
 	__tablename__ = 'wind_directions'
