@@ -132,7 +132,7 @@ elm-stuff
 repl-temp-*
 
 #web/frontend/files/*
-config.py
+#config.py
 
 #db files
 *.db
