@@ -1,3 +1,6 @@
+### Some stuff that i can share
+prpc-all-data.csv
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -31,6 +34,9 @@ wheels/
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
+
+#Tips
+comands_gcloud.txt
 
 # Installer logs
 pip-log.txt
