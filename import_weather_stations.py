@@ -6,7 +6,8 @@ from database import session
 
 
 def import_weather_stations():
-	csvfile  = open('weather_stations.csv', "rt", encoding='utf8')
+	print("Importando dados weather.")
+	csvfile  = open('./data/weather_stations.csv', "rt", encoding='utf8')
 	text = csv.reader(csvfile, delimiter=',')
 	for row in text:
 		w = Weather_station()
@@ -17,6 +18,7 @@ def import_weather_stations():
 		session.add(w)
 	
 	session.commit()
+	print("Finalizado importados de dados weather.")
 
 if __name__ == '__main__':
 	import_weather_stations()
