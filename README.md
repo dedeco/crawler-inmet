@@ -10,7 +10,7 @@ It's simple crawler to get the data, save on sqlite lite, and can be export to c
 	```
 3.  Create tables and import base data:
     ```
-	user@server:~$ python create_tables.py import_weather_stations.py import_wind_directions.py
+	user@server:~$ python create_tables.py && python import_weather_stations.py && python import_wind_directions.py
 	```
 4. Change the config before crawling:
 	Step 1: Create a login on INMET ( you will need an account ): [See here how to](http://www.inmet.gov.br/projetos/rede/pesquisa/cad_senha.php)
