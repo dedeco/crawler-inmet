@@ -1,5 +1,5 @@
 
-DATABASE_URI = 'sqlite:////////Users/dedeco/Projetos/crawler-inmet/clima.db'
+DATABASE_URI = 'sqlite:///clima.db'
 
 USER = 'dedeco@gmail.com'
 PASS = '3ybb3g03'
